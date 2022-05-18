@@ -1,0 +1,672 @@
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+#header-content{
+  background-image: url("images/bg.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#logo-image {
+  transform: translateY(-40px);
+
+  width: 100px;
+  height: 100px;
+}
+#nav{
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  height: 300px;
+  
+}
+
+#nav > *, #menu > *, #contact >* {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+
+#menu > *{
+  margin: 6px;
+}
+
+#menu > a:hover {
+  color: rgb(175, 171, 171);
+  font-size: 1rem;
+}
+#contact > a:hover {
+  color: rgb(175, 171, 171);
+  font-size: 1rem;
+}
+
+#intro {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  transform: translate(30px,0px);
+  height: 300px;
+  width: 400px;
+ 
+}
+
+#about {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgb(19, 19, 1) , rgb(71, 62, 62) );
+  color: white;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  padding: 8px 25px;
+  width: 130px;
+  height: 40px;
+  transition: all 0.3s;
+}
+
+#about > a {
+  text-decoration: none;
+  color: white;
+}
+
+#about:hover {
+
+  transform: scale(1.15);
+}
+
+#my-story {
+  text-align: center;
+  background-image: url("images/IT\ Bg.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#my-story > h1 {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 80px;
+  font-size: 2.5rem;
+}
+
+#prt {
+  margin-top: 35px;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  
+}
+
+#my-story > p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight:700 ;
+  height: 150px;
+  width: 480px;
+ 
+  /* margin: auto 300px; */
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+#edu-main {
+  background-image: url("images/drew-beamer-kUHfMW8awpE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#education {
+  padding-top: 30px;
+  padding-bottom: 120px;
+  width: 80% ;
+  margin: 0 auto;
+}
+
+#text > h1  {
+  text-align: left;
+}
+
+
+
+#hghs-s {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+
+#text {
+  padding-left: 20px;
+  border-left: 2px solid rgb(78, 53, 53);
+  margin: auto 0px auto 0px;
+}
+
+
+#text > h2 {
+  font-size: 14px;
+}
+
+#hghs {
+  
+  height: 200px;
+  width: auto;
+}
+
+/* #image{
+ height: 50px;
+ width: 60px;
+
+
+} */
+
+
+/* My skills start */
+
+#skill-bg {
+  background-image: url("images/bg\ 3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+
+#skill-hd {
+  font-size: 2.2rem ;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#skill {
+  padding: 20px;
+  /* display: flex;
+  justify-content: space-between; */
+  
+}
+
+#skill-1 {
+  font-family: 'Raleway', sans-serif;
+
+  /* margin-top: 30px; */
+  text-align: left; 
+  /* margin-left: 60px; */
+  /* width: 65%; */
+}
+
+
+#skill-1 > button {
+  height: min-content;
+
+}
+
+#skill-1 > p {
+  font-size: 20px;
+
+}
+
+.skill-container{
+  font-family: 'Raleway', sans-serif;
+  width: 400px;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  /* margin: 0 auto; */
+  background-image: linear-gradient(45deg, rgb(94, 94, 85) , rgb(250, 241, 241) );
+  }
+  
+
+  .skill-container li{
+      list-style-type: none;
+      margin: 30px 0;
+      font-weight: bolder;
+      text-transform: uppercase;
+      position: relative;
+  }
+
+  .skill-container li::before{
+
+      content: '';
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+
+
+      background-color: rgb(170,167,173);
+      width: 100%;
+      height: 5px;
+      border-radius: 1000px;
+  }
+
+
+  .skill-container li::after{
+
+      content: '';
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+
+
+      background-color: rgb(249,249,250);
+      width: 0;
+      height: 5px;
+      border-radius: 1000px;
+
+
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+  }
+
+  .skill-container li.html::after{
+      animation-name: html;
+  }
+
+  @keyframes html{
+      to{
+          width: 90%;
+          background-color: rgb(0, 81, 255);
+      }
+  }
+
+  .skill-container li.css::after{
+      animation-name: css;
+  }
+
+  @keyframes css{
+      to{
+          width: 65%;
+          background-color: rgb(0, 81, 255);
+      }
+  }
+
+  
+  .skill-container li.js::after{
+      animation-name: html;
+  }
+
+  @keyframes js{
+      to{
+          width: 70%;
+          background-color: rgb(0, 81, 255);
+      }
+  }
+      
+  .skill-container li.bs::after{
+      animation-name: html;
+  }
+
+  @keyframes bs{
+      to{
+          width: 80%;
+          background-color: rgb(0, 81, 255);
+      }
+  }
+      
+  .skill-container li.java::after{
+      animation-name: html;
+  }
+
+  @keyframes java{
+      to{
+          width: 65%;
+          background-color: rgb(0, 102, 255);
+      }
+  }
+      
+  .skill-container li.cplus::after{
+      animation-name: html;
+  }
+
+  @keyframes cplus{
+      to{
+          width: 750%;
+          background-color: rgb(9, 53, 175);
+      }
+     
+  }
+
+    
+  #accv > h1 {
+      padding: 40px;
+      font-size: 2.5rem;
+      text-align: center;
+  }
+  
+  #accv-container {
+      font-family: 'Raleway', sans-serif;
+      /* display: flex;
+      justify-content: space-around */
+      padding-left: 60px;
+
+      
+  }
+  
+  
+  
+  #mo {
+      width: 343px;
+      height: 150px;
+  }
+  
+  
+  .math > p {
+      font-size: 20px;
+  }
+  .math > h2 {
+      
+      margin: 30px 0;
+      padding-top: 2px;
+      padding-bottom: 25px;
+  }
+  .math {
+      height: 400px;
+       text-align: center;
+      width: 365px;
+      transition: all 0.2s;
+      cursor: pointer;
+  }     
+  
+  .math:hover {
+      box-shadow: 10px 20px 40px gray;
+      transform: scale(1.05);
+  }
+  
+  
+  
+  .experience-single{
+     
+      box-shadow: 5px 10px 20px gray;
+      border-radius: 10px;
+      height: 40%;
+      margin-bottom: 30px;
+      background-color: white;
+      padding-bottom: 30px;
+      }
+      #border-gre{
+      border-left: 7px solid;
+      border-image: linear-gradient(tomato, #b676e0) 30;
+      border-image-slice: fill;
+      }
+      #border-style{
+      border-left: 7px solid;
+      border-image: linear-gradient(rgb(7, 90, 34), #b676e0) 30;
+      /* border-image-slice: fill; */
+      border-radius: 10px;
+      }
+  
+  
+      #achievement > h2 {
+          margin-bottom: 20px;
+      }
+  
+      #achievement {
+          margin-top: 20px;
+          padding: 20px;
+          font-weight: bold;
+          color: white;
+      }
+      
+      
+      #achievement > h2 {
+          text-align: center;
+          color: black;
+      }
+
+      
+#photo {
+  text-align: center;
+}
+
+  #p1 {
+      width: 440px;
+      height: 160px;
+      text-align: center;
+      transition: all 0.2s;
+  }
+  
+  #p1:hover {
+      transform: scale(1.1);
+  }
+  
+  #more {
+      text-align: center;
+      font-size: 2rem;
+  }
+  
+  #more > button {
+      height: 50px;
+      width: 150px;
+  }
+
+
+/* get in touch start */
+  
+
+#get-in {
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-top: 20px;
+  
+}
+
+.fa-user, .fa-envelope, .fa-map-marker  {
+  transform: scale(1.15);
+  padding-right: 20px;
+  margin-top: 20px;
+  
+}
+
+
+#footer-container {
+  font-family: 'Raleway', sans-serif;
+  background-color: #504c4c;
+  
+}
+
+#footer-container {
+  /* display: flex; */
+  /* justify-content: space-around;
+  justify-items: center; */
+
+}
+
+#contact-form {
+  text-align: center;
+  margin-top: 45px;
+  padding: 20px;
+}
+
+
+#contact-form > input {
+  padding: 12px;
+  border-radius: 10px;
+  width: 350px;
+  font-size: 1.0rem;
+ }
+ 
+ #contact-form > textarea {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  font-size: 1rem;
+  margin: 5px auto;
+  text-align: center;
+  resize: none;
+ }
+
+
+ #contact-form > textarea {
+     
+     padding: 12px;
+     border-radius: 10px;
+     width: 350px;
+     font-size: 1rem; 
+    }
+
+    .f-button {
+      cursor: pointer;
+      padding: 8px;
+      width: 80px;
+      background-color: rgb(31, 31, 61);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      transition: all 0.3s;
+      margin-left: 10px;
+  }
+
+
+  .f-button:hover {
+      color: gray;
+  }
+
+
+
+
+  
+#more-ways-to-contact {
+
+  text-align: center;
+  margin-top: auto;
+
+}
+
+  
+
+ #buttons {
+     padding: 10px 15px 0 15px; 
+     font-size: 1.5rem;
+     color: white;
+     
+     background-color: transparent;
+     border: none;
+     border-radius: 50%;
+     transition: all 0.3s;
+     cursor: pointer;
+ }
+
+ #buttons:hover {
+     transform: scale(1.2);
+ }
+
+ /* Footer2 starts */
+
+ #footer2 {
+   font-family: 'Raleway', sans-serif;
+     background-color: black;
+     text-align: center;
+ }
+
+ #navbar2 a {
+     text-decoration: none;
+     font-size: 1.2rem;
+     color: white;
+     display: block;
+     padding: 8px;
+     transition: all 0.4s;
+ }
+
+
+ #copy {
+     padding-top: 10px;
+     color: white;
+     height: 40px;
+     font-size: 1rem;
+ }
+
+
+ #image {
+  text-align: center;
+}
+
+
+#down-arrow {
+  height: auto;
+  width: 60px;
+  margin-top: 160px;
+  margin-left: 37px;
+  text-align: center;
+  animation: Arrow 2s forwards infinite;
+  opacity: 0.6;
+  position: relative;
+}
+
+
+@keyframes Arrow {
+
+  0%{
+      top:0;
+      left:0;
+  }
+  50%{
+      top: 20px;
+      left: 0%;
+      opacity: 0.3;
+      transform: scale(0.8);
+  }
+  100%{
+      top:0;
+      left:0;
+  }
+
+}
+
+
+/* responsive menu starts */
+
+/* #menu{
+  position: absolute;
+  top: 70px;
+  left: -100%;
+  background: #111;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+#contact{
+  display: none;
+}
+
+#menu > a{
+  width: 100%;
+  margin: 40px 0;
+  color: gray;
+}
+
+.menu-btn i{
+  font-size: 22px ;
+
+  cursor: pointer;
+}
+
+#click:checked ~ ul{
+  left: 0%;
+}
+
+#click{
+  display: none;
+} */
